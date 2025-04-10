@@ -12,7 +12,10 @@ import (
 )
 
 var (
-	green = color.New(color.FgGreen, color.Bold).PrintfFunc()
+	green          = color.New(color.FgGreen, color.Bold).PrintfFunc()
+	faint          = color.New(color.Faint).PrintfFunc()
+	red            = color.New(color.FgRed).SprintfFunc()
+	requestCounter = 0
 )
 
 type Server struct {
@@ -35,7 +38,7 @@ func main() {
 	flag.Parse()
 	s := NewServer(*listenAddr)
 	green("Server running on port: http://localhost%v\n", *listenAddr)
-	log.Fatal(s.Start())
+	log.Fatal(red("%v", s.Start()))
 }
 
 func NewServer(listenAddr string) *Server {
@@ -55,21 +58,23 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) getQuoteOfTheDay(w http.ResponseWriter, r *http.Request) {
+	requestCounter++
 
 	quotesData, err := readQuotesJson()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal(red("%v", err))
 	}
 
 	quote := getRandomQuote(quotesData)
 
 	json.NewEncoder(w).Encode(quote)
+	faint("Request #%v: %v\n", requestCounter, *r)
 }
 
 func readQuotesJson() (*QuotesData, error) {
 	jsonFile, err := os.Open("quotes.json")
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal(red("%v", err))
 		return &QuotesData{}, err
 	}
 	defer jsonFile.Close()
@@ -77,7 +82,7 @@ func readQuotesJson() (*QuotesData, error) {
 	var quotesData QuotesData
 	decoder := json.NewDecoder(jsonFile)
 	if err := decoder.Decode(&quotesData); err != nil {
-		log.Fatal(err)
+		log.Fatal(red("%v", err))
 		return &QuotesData{}, err
 	}
 	return &quotesData, err
