@@ -3,11 +3,16 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"fmt"
 	"log"
 	"math/rand/v2"
 	"net/http"
 	"os"
+
+	"github.com/fatih/color"
+)
+
+var (
+	green = color.New(color.FgGreen, color.Bold).PrintfFunc()
 )
 
 type Server struct {
@@ -29,7 +34,7 @@ func main() {
 	listenAddr := flag.String("listenaddr", ":8000", "the server address")
 	flag.Parse()
 	s := NewServer(*listenAddr)
-	fmt.Printf("Server running on port: http://localhost%v\n", *listenAddr)
+	green("Server running on port: http://localhost%v\n", *listenAddr)
 	log.Fatal(s.Start())
 }
 
