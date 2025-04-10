@@ -1,0 +1,604 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs",
+      "category": "Motivation"
+    },
+    {
+      "id": 2,
+      "quote": "Life is what happens when you're busy making other plans.",
+      "author": "John Lennon",
+      "category": "Life"
+    },
+    {
+      "id": 3,
+      "quote": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+      "author": "Buddha",
+      "category": "Mindfulness"
+    },
+    {
+      "id": 4,
+      "quote": "It does not matter how slowly you go as long as you do not stop.",
+      "author": "Confucius",
+      "category": "Perseverance"
+    },
+    {
+      "id": 5,
+      "quote": "Everything you’ve ever wanted is on the other side of fear.",
+      "author": "George Addair",
+      "category": "Courage"
+    },
+    {
+      "id": 6,
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "category": "Success"
+    },
+    {
+      "id": 7,
+      "quote": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "category": "Belief"
+    },
+    {
+      "id": 8,
+      "quote": "Act as if what you do makes a difference. It does.",
+      "author": "William James",
+      "category": "Action"
+    },
+    {
+      "id": 9,
+      "quote": "Success usually comes to those who are too busy to be looking for it.",
+      "author": "Henry David Thoreau",
+      "category": "Success"
+    },
+    {
+      "id": 10,
+      "quote": "Don't be afraid to give up the good to go for the great.",
+      "author": "John D. Rockefeller",
+      "category": "Ambition"
+    },
+    {
+      "id": 11,
+      "quote": "I find that the harder I work, the more luck I seem to have.",
+      "author": "Thomas Jefferson",
+      "category": "Hard Work"
+    },
+    {
+      "id": 12,
+      "quote": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+      "author": "Roy T. Bennett",
+      "category": "Success"
+    },
+    {
+      "id": 13,
+      "quote": "Hardships often prepare ordinary people for an extraordinary destiny.",
+      "author": "C.S. Lewis",
+      "category": "Perseverance"
+    },
+    {
+      "id": 14,
+      "quote": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Eleanor Roosevelt",
+      "category": "Dreams"
+    },
+    {
+      "id": 15,
+      "quote": "Do one thing every day that scares you.",
+      "author": "Eleanor Roosevelt",
+      "category": "Courage"
+    },
+    {
+      "id": 16,
+      "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+      "author": "Ralph Waldo Emerson",
+      "category": "Self-Discovery"
+    },
+    {
+      "id": 17,
+      "quote": "The best way to predict the future is to invent it.",
+      "author": "Alan Kay",
+      "category": "Innovation"
+    },
+    {
+      "id": 18,
+      "quote": "If you want to lift yourself up, lift up someone else.",
+      "author": "Booker T. Washington",
+      "category": "Compassion"
+    },
+    {
+      "id": 19,
+      "quote": "You miss 100% of the shots you don't take.",
+      "author": "Wayne Gretzky",
+      "category": "Opportunity"
+    },
+    {
+      "id": 20,
+      "quote": "Strive not to be a success, but rather to be of value.",
+      "author": "Albert Einstein",
+      "category": "Value"
+    },
+    {
+      "id": 21,
+      "quote": "I attribute my success to this: I never gave or took any excuse.",
+      "author": "Florence Nightingale",
+      "category": "Determination"
+    },
+    {
+      "id": 22,
+      "quote": "You can't use up creativity. The more you use, the more you have.",
+      "author": "Maya Angelou",
+      "category": "Creativity"
+    },
+    {
+      "id": 23,
+      "quote": "Dream big and dare to fail.",
+      "author": "Norman Vaughan",
+      "category": "Dreams"
+    },
+    {
+      "id": 24,
+      "quote": "Do what you can, where you are, with what you have.",
+      "author": "Theodore Roosevelt",
+      "category": "Action"
+    },
+    {
+      "id": 25,
+      "quote": "If you do what you’ve always done, you’ll get what you’ve always gotten.",
+      "author": "Tony Robbins",
+      "category": "Change"
+    },
+    {
+      "id": 26,
+      "quote": "The only limit to our realization of tomorrow is our doubts of today.",
+      "author": "Franklin D. Roosevelt",
+      "category": "Potential"
+    },
+    {
+      "id": 27,
+      "quote": "It is never too late to be what you might have been.",
+      "author": "George Eliot",
+      "category": "Self-Discovery"
+    },
+    {
+      "id": 28,
+      "quote": "Everything has beauty, but not everyone can see.",
+      "author": "Confucius",
+      "category": "Perspective"
+    },
+    {
+      "id": 29,
+      "quote": "Happiness is not something ready made. It comes from your own actions.",
+      "author": "Dalai Lama",
+      "category": "Happiness"
+    },
+    {
+      "id": 30,
+      "quote": "The only place where success comes before work is in the dictionary.",
+      "author": "Vidal Sassoon",
+      "category": "Hard Work"
+    },
+    {
+      "id": 31,
+      "quote": "Opportunities don't happen. You create them.",
+      "author": "Chris Grosser",
+      "category": "Opportunity"
+    },
+    {
+      "id": 32,
+      "quote": "Don't watch the clock; do what it does. Keep going.",
+      "author": "Sam Levenson",
+      "category": "Perseverance"
+    },
+    {
+      "id": 33,
+      "quote": "Life is about making an impact, not making an income.",
+      "author": "Kevin Kruse",
+      "category": "Life"
+    },
+    {
+      "id": 34,
+      "quote": "Whatever the mind of man can conceive and believe, it can achieve.",
+      "author": "Napoleon Hill",
+      "category": "Belief"
+    },
+    {
+      "id": 35,
+      "quote": "Strive not to be a success, but rather to be of value.",
+      "author": "Albert Einstein",
+      "category": "Success"
+    },
+    {
+      "id": 36,
+      "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+      "author": "Robert Frost",
+      "category": "Choices"
+    },
+    {
+      "id": 37,
+      "quote": "I attribute my success to this: I never gave or took any excuse.",
+      "author": "Florence Nightingale",
+      "category": "Determination"
+    },
+    {
+      "id": 38,
+      "quote": "You miss 100% of the shots you don’t take.",
+      "author": "Wayne Gretzky",
+      "category": "Opportunity"
+    },
+    {
+      "id": 39,
+      "quote": "I've missed more than 9,000 shots in my career. I've lost almost 300 games. 26 times I've been trusted to take the game-winning shot and missed. I've failed over and over and over ... . And that is why I succeed.",
+      "author": "Michael Jordan",
+      "category": "Perseverance"
+    },
+    {
+      "id": 40,
+      "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+      "author": "Amelia Earhart",
+      "category": "Action"
+    },
+    {
+      "id": 41,
+      "quote": "Every strike brings me closer to the next home run.",
+      "author": "Babe Ruth",
+      "category": "Perseverance"
+    },
+    {
+      "id": 42,
+      "quote": "Definiteness of purpose is the starting point of all achievement.",
+      "author": "W. Clement Stone",
+      "category": "Purpose"
+    },
+    {
+      "id": 43,
+      "quote": "We must balance conspicuous consumption with conscious capitalism.",
+      "author": "Kevin Kruse",
+      "category": "Business"
+    },
+    {
+      "id": 44,
+      "quote": "Life is what happens to you while you’re busy making other plans.",
+      "author": "John Lennon",
+      "category": "Life"
+    },
+    {
+      "id": 45,
+      "quote": "We become what we think about.",
+      "author": "Earl Nightingale",
+      "category": "Mindset"
+    },
+    {
+      "id": 46,
+      "quote": "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.",
+      "author": "Mark Twain",
+      "category": "Regret"
+    },
+    {
+      "id": 47,
+      "quote": "Life is 10% what happens to me and 90% of how I react to it.",
+      "author": "Charles Swindoll",
+      "category": "Attitude"
+    },
+    {
+      "id": 48,
+      "quote": "The most common way people give up ...  don’t have any.",
+      "author": "Alice Walker",
+      "category": "Empowerment"
+    },
+    {
+      "id": 49,
+      "quote": "The mind is everything. What you think you become.",
+      "author": "Buddha",
+      "category": "Mindset"
+    },
+    {
+      "id": 50,
+      "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "author": "Chinese Proverb",
+      "category": "Action"
+    },
+    {
+      "id": 51,
+      "quote": "An unexamined life is not worth living.",
+      "author": "Socrates",
+      "category": "Self-Reflection"
+    },
+    {
+      "id": 52,
+      "quote": "Eighty percent of success is showing up.",
+      "author": "Woody Allen",
+      "category": "Success"
+    },
+    {
+      "id": 53,
+      "quote": "Your time is limited, so don’t waste it living someone else’s life.",
+      "author": "Steve Jobs",
+      "category": "Life"
+    },
+    {
+      "id": 54,
+      "quote": "Winning isn’t everything, but wanting to win is.",
+      "author": "Vince Lombardi",
+      "category": "Motivation"
+    },
+    {
+      "id": 55,
+      "quote": "I am not a product of my circumstances. I am a product of my decisions.",
+      "author": "Stephen Covey",
+      "category": "Choices"
+    },
+    {
+      "id": 56,
+      "quote": "Every child is an artist. The problem is how to remain an artist once he grows up.",
+      "author": "Pablo Picasso",
+      "category": "Creativity"
+    },
+    {
+      "id": 57,
+      "quote": "You can never cross the ocean until you have the courage to lose sight of the shore.",
+      "author": "Christopher Columbus",
+      "category": "Courage"
+    },
+    {
+      "id": 58,
+      "quote": "Either you run the day, or the day runs you.",
+      "author": "Jim Rohn",
+      "category": "Productivity"
+    },
+    {
+      "id": 59,
+      "quote": "Whether you think you can or you think you can’t, you’re right.",
+      "author": "Henry Ford",
+      "category": "Belief"
+    },
+    {
+      "id": 60,
+      "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+      "author": "Mark Twain",
+      "category": "Purpose"
+    },
+    {
+      "id": 61,
+      "quote": "Whatever you can do, or dream you can, begin it. Boldness has genius, power and magic in it.",
+      "author": "Johann Wolfgang von Goethe",
+      "category": "Action"
+    },
+    {
+      "id": 62,
+      "quote": "The best revenge is massive success.",
+      "author": "Frank Sinatra",
+      "category": "Success"
+    },
+    {
+      "id": 63,
+      "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+      "author": "Albert Schweitzer",
+      "category": "Happiness"
+    },
+    {
+      "id": 64,
+      "quote": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.",
+      "author": "Pele",
+      "category": "Success"
+    },
+    {
+      "id": 65,
+      "quote": "The only limit to our realization of tomorrow is our doubts of today.",
+      "author": "Franklin D. Roosevelt",
+      "category": "Potential"
+    },
+    {
+      "id": 66,
+      "quote": "Act as if what you do makes a difference. It does.",
+      "author": "William James",
+      "category": "Action"
+    },
+    {
+      "id": 67,
+      "quote": "Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come.",
+      "author": "Dwayne Johnson",
+      "category": "Consistency"
+    },
+    {
+      "id": 68,
+      "quote": "The best way to predict the future is to create it.",
+      "author": "Peter Drucker",
+      "category": "Innovation"
+    },
+    {
+      "id": 69,
+      "quote": "You have to believe in yourself when no one else does.",
+      "author": "Serena Williams",
+      "category": "Self-Belief"
+    },
+    {
+      "id": 70,
+      "quote": "Don't watch the clock; do what it does. Keep going.",
+      "author": "Sam Levenson",
+      "category": "Perseverance"
+    },
+    {
+      "id": 71,
+      "quote": "Do not wait to strike till the iron is hot, but make it hot by striking.",
+      "author": "William Butler Yeats",
+      "category": "Initiative"
+    },
+    {
+      "id": 72,
+      "quote": "The harder the conflict, the greater the triumph.",
+      "author": "George Washington",
+      "category": "Perseverance"
+    },
+    {
+      "id": 73,
+      "quote": "Success is not in what you have, but who you are.",
+      "author": "Bo Bennett",
+      "category": "Success"
+    },
+    {
+      "id": 74,
+      "quote": "The secret of success is to do the common thing uncommonly well.",
+      "author": "John D. Rockefeller Jr.",
+      "category": "Excellence"
+    },
+    {
+      "id": 75,
+      "quote": "Success is getting what you want. Happiness is wanting what you get.",
+      "author": "Dale Carnegie",
+      "category": "Happiness"
+    },
+    {
+      "id": 76,
+      "quote": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+      "author": "Roy T. Bennett",
+      "category": "Impact"
+    },
+    {
+      "id": 77,
+      "quote": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "category": "Action"
+    },
+    {
+      "id": 78,
+      "quote": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+      "author": "Roy T. Bennett",
+      "category": "Courage"
+    },
+    {
+      "id": 79,
+      "quote": "Success is a journey, not a destination. The doing is often more important than the outcome.",
+      "author": "Arthur Ashe",
+      "category": "Journey"
+    },
+    {
+      "id": 80,
+      "quote": "The only place where success comes before work is in the dictionary.",
+      "author": "Vidal Sassoon",
+      "category": "Hard Work"
+    },
+    {
+      "id": 81,
+      "quote": "Success is not to be pursued; it is to be attracted by the person you become.",
+      "author": "Jim Rohn",
+      "category": "Personal Growth"
+    },
+    {
+      "id": 82,
+      "quote": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+      "author": "Winston S. Churchill",
+      "category": "Resilience"
+    },
+    {
+      "id": 83,
+      "quote": "Success is not measured by what you accomplish, but by the opposition you have encountered, and the courage with which you have maintained the struggle against overwhelming odds.",
+      "author": "Orison Swett Marden",
+      "category": "Courage"
+    },
+    {
+      "id": 84,
+      "quote": "Success is liking yourself, liking what you do, and liking how you do it.",
+      "author": "Maya Angelou",
+      "category": "Self-Love"
+    },
+    {
+      "id": 85,
+      "quote": "The road to success and the road to failure are almost exactly the same.",
+      "author": "Colin R. Davis",
+      "category": "Choices"
+    },
+    {
+      "id": 86,
+      "quote": "Success is not the absence of failure; it's the persistence through failure.",
+      "author": "Aisha Tyler",
+      "category": "Persistence"
+    },
+    {
+      "id": 87,
+      "quote": "Success is the sum of small efforts, repeated day in and day out.",
+      "author": "Robert Collier",
+      "category": "Consistency"
+    },
+    {
+      "id": 88,
+      "quote": "Success is achieved and maintained by those who try and keep trying.",
+      "author": "W. Clement Stone",
+      "category": "Perseverance"
+    },
+    {
+      "id": 89,
+      "quote": "Success is a state of mind. If you want success, start thinking of yourself as a success.",
+      "author": "Joyce Brothers",
+      "category": "Mindset"
+    },
+    {
+      "id": 90,
+      "quote": "Success is not about the destination, it's about the journey.",
+      "author": "Zig Ziglar",
+      "category": "Journey"
+    },
+    {
+      "id": 91,
+      "quote": "Success is not something you pursue. Success is something you attract by the person you become.",
+      "author": "Jim Rohn",
+      "category": "Personal Growth"
+    },
+    {
+      "id": 92,
+      "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+      "author": "Albert Schweitzer",
+      "category": "Happiness"
+    },
+    {
+      "id": 93,
+      "quote": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "category": "Belief"
+    },
+    {
+      "id": 94,
+      "quote": "In the middle of every difficulty lies opportunity.",
+      "author": "Albert Einstein",
+      "category": "Opportunity"
+    },
+    {
+      "id": 95,
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "category": "Perseverance"
+    },
+    {
+      "id": 96,
+      "quote": "It does not matter how slowly you go as long as you do not stop.",
+      "author": "Confucius",
+      "category": "Persistence"
+    },
+    {
+      "id": 97,
+      "quote": "Act as if what you do makes a difference. It does.",
+      "author": "William James",
+      "category": "Action"
+    },
+    {
+      "id": 98,
+      "quote": "Keep your face always toward the sunshine—and shadows will fall behind you.",
+      "author": "Walt Whitman",
+      "category": "Positivity"
+    },
+    {
+      "id": 99,
+      "quote": "The only way to achieve the impossible is to believe it is possible.",
+      "author": "Charles Kingsleigh",
+      "category": "Possibility"
+    },
+    {
+      "id": 100,
+      "quote": "Keep going. Everything you need will come to you at the perfect time.",
+      "author": "Unknown",
+      "category": "Patience"
+    }
+  ]
+}
