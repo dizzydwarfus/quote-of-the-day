@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote of The Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/htmx.org@2.0.4" 
+    integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Quote of the Day</h1>
+    <div class="main-container">
+      <button 
+        hx-get="/quote" 
+        hx-swap="afterend" 
+        id="testbutton" 
+        class="quote-button">
+        Get Quote
+      </button>
+    </div>
+  </div>
+</body>
+</html>

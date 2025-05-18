@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"html/template"
 	"log"
 	"math/rand/v2"
 	"net/http"
@@ -12,14 +13,15 @@ import (
 )
 
 var (
-	green          = color.New(color.FgGreen, color.Bold).PrintfFunc()
-	faint          = color.New(color.Faint).PrintfFunc()
-	red            = color.New(color.FgRed).SprintfFunc()
-	requestCounter = 0
+	Green          = color.New(color.FgGreen, color.Bold).PrintfFunc()
+	Faint          = color.New(color.Faint).PrintfFunc()
+	Red            = color.New(color.FgRed).SprintfFunc()
+	RequestCounter = 0
 )
 
 type Server struct {
 	listenAddr string
+	tmpl       *template.Template
 }
 
 type Quote struct {
@@ -34,58 +36,70 @@ type QuotesData struct {
 }
 
 func main() {
-	listenAddr := flag.String("listenaddr", ":8000", "the server address")
+	listenAddr := flag.String("listenaddr", ":8080", "the server address")
 	flag.Parse()
-	s := NewServer(*listenAddr)
-	green("Server running on port: http://localhost%v\n", *listenAddr)
-	log.Fatal(red("%v", s.Start()))
+
+	tmpl, err := template.ParseFiles("templates/quote.html")
+	if err != nil {
+		log.Fatalf("Template error: %v", err)
+	}
+
+	s := NewServer(*listenAddr, tmpl)
+
+	log.Printf("Server running on port: http://localhost%v\n", *listenAddr)
+	log.Fatal(s.Start())
 }
 
-func NewServer(listenAddr string) *Server {
+func NewServer(listenAddr string, tmpl *template.Template) *Server {
 	return &Server{
 		listenAddr: listenAddr,
+		tmpl:       tmpl,
 	}
 }
 
 func (s *Server) Start() error {
-	http.HandleFunc("/", home)
-	http.HandleFunc("/quote", s.getQuoteOfTheDay)
-	return http.ListenAndServe(s.listenAddr, nil)
-}
+	mux := http.NewServeMux()
 
-func home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Welcome to the Quote of The Day API, use /quote to get a random quote."))
+	fsHandler := http.FileServer(http.Dir("./web"))
+
+	mux.Handle("/", fsHandler)
+	mux.HandleFunc("/quote", s.getQuoteOfTheDay)
+
+	return http.ListenAndServe(s.listenAddr, mux)
 }
 
 func (s *Server) getQuoteOfTheDay(w http.ResponseWriter, r *http.Request) {
-	requestCounter++
+	RequestCounter++
 
 	quotesData, err := readQuotesJson()
 	if err != nil {
-		log.Fatal(red("%v", err))
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
 	}
 
 	quote := getRandomQuote(quotesData)
 
-	json.NewEncoder(w).Encode(quote)
-	faint("Request #%v: %v\n", requestCounter, *r)
+	// Execute template with Quote struct
+	w.Header().Set("Content-Type", "text/html")
+	if err := s.tmpl.Execute(w, quote); err != nil {
+		http.Error(w, "Error rendering template", http.StatusInternalServerError)
+		return
+	}
 }
 
 func readQuotesJson() (*QuotesData, error) {
 	jsonFile, err := os.Open("quotes.json")
 	if err != nil {
-		log.Fatal(red("%v", err))
-		return &QuotesData{}, err
+		return nil, err
 	}
 	defer jsonFile.Close()
 
 	var quotesData QuotesData
 	decoder := json.NewDecoder(jsonFile)
 	if err := decoder.Decode(&quotesData); err != nil {
-		log.Fatal(red("%v", err))
-		return &QuotesData{}, err
+		return nil, err
 	}
-	return &quotesData, err
+	return &quotesData, nil
 }
 
 func getRandomQuote(quotes *QuotesData) Quote {
